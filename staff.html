@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phoenix-Network</title>
+</head>
+<body>
+<br/>
+<video
+        autoplay=""
+        loop=""
+        src="video.mp4"
+        id="video"
+        style="border:none;width:50%; height:auto;"></video>
+<script>
+    video = document.querySelector('#video');
+    console.log(video);
+    // video.play()
+    // var audio = document.querySelector('#video');
+    // document.body.appendChild(audio);
+
+    audio.src = "./video.mp4";
+
+    document.body.addEventListener("mousemove", function () {
+        audio.play()
+    })
+    // in the js code unmute the audio once the event happened
+
+    // document.getElementById('video').muted = false;
+    // document.getElementById('video').play();
+
+    // var audio = new Audio('./video.mp4');
+    // var playPromise = audio.play();
+
+    // var audio = new Audio();
+    // audio.src='./video.mp4';
+    // // when the sound has been loaded, execute your code
+    // audio.oncanplaythrough = (event) => {
+    //     var playedPromise = audio.play();
+    //     if (playedPromise) {
+    //         playedPromise.catch((e) => {
+    //             console.log(e)
+    //             if (e.name === 'NotAllowedError' || e.name === 'NotSupportedError') {
+    //                 console.log(e.name);
+    //             }
+    //         }).then(() => {
+    //             console.log("playing sound !!!");
+    //         });
+    //     }
+    // }
+</script>
+</body>
+</html>
