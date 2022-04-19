@@ -291,7 +291,6 @@ body {
 }
 
 .imgf {
-    height: auto;
     max-width: 100%;
     vertical-align: middle;
   }
@@ -323,7 +322,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding-top: 20px;
+  padding: 0;
 }
 
 .cards_item {
